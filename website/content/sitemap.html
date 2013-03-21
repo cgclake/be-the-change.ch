@@ -1,0 +1,14 @@
+--- 
+title: Site Map
+lead: Alle unsere Seiten im Überblick
+---
+
+   <% home_page = @items.find { |i| i.reps[0].path == '/' } %>
+        <ul>
+                <li><%= link_to(home_page[:title], home_page.reps[0]) %></li>
+
+
+                <% home_page.children.each do |page| %>
+                        <li><%= link_to(page[:title], page.reps[0]) %></li>
+                <% end %>
+        </ul>

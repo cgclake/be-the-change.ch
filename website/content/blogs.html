@@ -1,0 +1,26 @@
+--- 
+title: All The Blogs
+lead:  Mobile Web und Integration. Unternehmen, Prozessen und Software Integration. 
+---
+
+<div class="row-fluid">
+  <div class="span8">
+  
+<% (@site.sorted_articles).each do |post| %>
+	<h3><%= link_to post[:title], post.path %></h3>
+	<p><%= get_pretty_date(post) %> - 	
+    <%= post[:lead] %></p>
+
+<% end %>
+  </div>
+  
+  <div class="span3">
+
+	<h3><a href="https://twitter.com/artooa_inc" target="_blank">Tweeds</a></h3>
+	
+	<blockquote class="twitter-tweet"><p>Just discovered Luis Zunos awesome designs. <a href="http://t.co/EPScUFjGkU" title="http://bit.ly/TCzBXH">bit.ly/TCzBXH</a></p>&mdash; artooa (@artooa_inc) <a href="https://twitter.com/artooa_inc/status/311732923961323522">March 13, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+  </div>  <!-- span -->
+</div> <!-- row -->

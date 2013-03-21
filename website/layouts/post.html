@@ -1,0 +1,33 @@
+<% render 'default' do %>
+<div class="row">
+  <div class="span8">
+    <div class='post'>
+    
+      <aside>A. Kapp, <%= get_pretty_date(item) %></aside>
+      <br>
+    
+      <article>
+        <%= yield %>
+      </article>
+    </div> <!-- span -->
+  </div> <!-- post --> 
+  
+  <div class="span3">
+    <div class="hero-unit" id="hero-unit">
+	<h3><a href="/blogs/">Blog</a></h3>
+	
+	<% (@site.sorted_articles[0..2]).each do |post| %>
+		<h4><%= link_to post[:title], post.path %></h4>
+		<p><small><%= get_pretty_date(post) %> - 	
+	    <%= link_to(post[:lead], post.reps[0], :id => 'bloglink') %> </small></p>
+	
+	<% end %>
+
+   </div> <!-- hero -->
+
+  </div>  <!-- span -->
+</div>  <!-- row -->
+
+<% end %>
+
+

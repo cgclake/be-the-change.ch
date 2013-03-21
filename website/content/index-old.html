@@ -1,0 +1,70 @@
+--- 
+title: Willkommen
+lead: "Das mobile Internet und die Ausweitung der Kernprozesse Ihres Unternehmens zu Ihren Kunden und Partern sind Megatrends des zweiten Jahrzehnts. Wir realisieren diesen Trend zusammen mit Ihnen."
+---
+
+<div class="row-fluid">
+        
+    <div class="hero">
+        <div class="hero-content">
+            <div class="slides">
+            
+                <div class="slide">
+                    <a href="#">
+                        <img class="img-rounded" src="/assets/img/home/project-terrevision-bw-940.png"></a>
+                </div>
+            
+                <div class="slide">
+                    <a href="/solutions/#mobile-website">
+                        <img class="img-rounded" src="/assets/img/home/mobile-development.png"></a>
+                </div>
+            
+                <div class="slide">
+                    <a href="/services/#design">
+                        <img class="img-rounded" src="/assets/img/home/artooa-icon-big-shadow.png"></a>
+                </div>
+            <!--
+                <div class="slide">
+                    <a href="/solutions/#content-managemenet">
+                        <img class="img-rounded" src="/assets/img/solutions/Magnolia_CMS_5_iPad3_1024.png"></a>
+                </div>
+                <div class="slide">
+                    <a href="/solutions/#software-integration">
+                        <img class="img-rounded" src="/assets/img/solutions/integration.jpg"></a>
+                </div>
+                -->
+            </div> <!-- slides -->
+        </div> <!-- hero-content -->
+    </div> <!-- hero -->
+ </div> <!-- row -->   
+<br>  
+<br>
+<div class="row">
+  <div class="span7">
+<p>
+<img src="/assets/img/scala-akka112-500px.png" alt="scala akka artooa">	
+</p>
+
+<h3>Artooa</h3> <p class="lead">
+Die Vereinigung von Kreativität mit dem Know-how erfahrener Software Ingenieure. Zusammen mit dem Können verantwortungsvoller Partner aus Design, 
+Betriebswirtschaft und Organisationsentwicklung. </p>
+<p class="lead">
+Wir finden auch für komplexe Aufgabenstellungen überzeugend pragmatische Lösungen. </p>
+  </div> <!-- span -->
+  
+<div class="span5">
+  <div class="hero-unit" id="hero-unit">
+	<h3><a href="/blogs/">Blog</a></h3>
+	
+<% (@site.sorted_articles[0..4]).each do |post| %>
+	<h4><%= link_to post[:title], post.path %></h4>
+	<p><small><%= get_pretty_date(post) %> - 	
+    <%= link_to(post[:lead], post.reps[0], :id => 'bloglink') %> </small></p>
+
+<% end %>
+
+   </div> <!-- hero -->
+  
+ </div> <!-- span -->
+ 
+</div> <!-- row -->

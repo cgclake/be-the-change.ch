@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="en,de,de_CH">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @item[:title] %> - Be The Change Schweiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Be The Change Switzerland Welt im Wandel Symposium Schweiz Termine Veranstaltungen">
+    <meta name="author" content="Andreas Kapp, www.Artooa.ch">
+
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!--link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="/assets/css/bootstrap-min.css">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+   
+
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive-min.css"> 
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+	    <script src="assets/js/html5shiv.js"></script>
+        <script src="assets/js/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="./assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+    
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>"> 
+    
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38444265-1']);
+	  _gaq.push(['_setDomainName', 'be-the-change.ch']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  </head>
+  
+<body>
+
+<a href="https://github.com/organizations/be-the-change" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+  
+<!-- NAVIGATION -->
+
+
+
+
+
+<div class="container">
+ <%= render '_navigation' %>
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+      		<section id="top">
+      		</section>	
+	      	<h2><%= @item[:title]%></h2>
+	        <p class="lead"><%= @item[:lead]%></p>
+      </div><!-- hero -->      		
+
+	    
+  <div class="row">
+    <div class="span12">
+
+	 <%= yield %>
+  <div> <!-- span12 -->
+
+<hr>
+
+      
+<div class="row" id="footer">
+      
+  <div class="span4">
+
+      	<address>
+      	 <p>
+	      <strong>Be The Change Schweiz</strong><br>
+	      Schützengasse 38c<br>
+	      2502 Biel/Bienne<br>
+		  Tel: 079 844 66 54<br>      
+		  <a href="mailto:hello@be-the-change.ch">hello@be-the-change.ch</a> 
+		  <div>
+			  <a href="https://twitter.com/go4yourvision" class="twitter-follow-button" data-show-count="false" data-lang="de" data-dnt="true">@go4yourvision folgen</a>
+			  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		  </div> 
+		  
+		  <div class="fb-like" data-href="http://www.be-the-change.ch/" data-send="true" data-layout="button_count" data-width="250" data-show-faces="true" data-font="trebuchet ms">
+			  
+		  </div>
+	   </p>
+	
+      	</address>
+ 
+  </div> <!-- span4 -->
+		
+  <div class="span8">
+	<div class="row">
+      <div class="span4">
+        <p><a href="http://www.be-the-change.de/">
+		<img src="/assets/img/btc-logo.png" class="img-rounded" width="280px" alt="BE THE CHANGE DE"/>
+		</a>
+		<a href="http://www.pachamama.org">
+		<img src="/assets/img/tpa-logo.png" class="img-rounded" width="280px" alt="Pachamama Aliance"/>
+		</a>
+		</p>
+		</div> <!-- span --> 
+		
+		<div class="span4">
+		<p>Friends</p>
+		<a href="http://www.openmindcafe.ch/">openmindcafe</a>
+		</div> <!-- span -->
+	</div> <!-- row -->
+
+  </div> <!-- row -->      
+
+</div>
+
+		 		   
+  <div class="row" id="footer">
+    <div class="span6">
+		<br>
+		<div class="sozial-media">
+		<p><small>
+		  <a href="/blogs/">Blog</a> |
+		  <a href="#">Newsletter</a> |
+		  <a href="#">Twitter </a> |
+		  <a href="https://github.com/organizations/be-the-change">Github </a> |	  		  
+		  <a href="https://www.facebook.com/BeTheChangeSwitzerland">Facebook</a> |
+		  <a href="#">Google+</a> 
+		</small></p>
+		</div> <!-- sozial-media -->
+	</div> <!-- span -->
+ 
+    <div class="span6">
+	  <br>
+	  <p class="text-right"><small>
+		  <a href="/impressum/">Impressum</a> | <a href="/sitemap/">Site Map</a> 
+		</small></p>		  		  		  
+	</div>
+	
+  </div> <!-- row -->
+  
+ 
+  <div class="row-fluid" id="copyright">	
+    <div class="span6">
+	  <p> <small>		
+	  Copyright &copy; 1999-2013 by Be The Change Switzerland. All rights reserved. Last changed <%= Time.now.strftime("%d.%m.%Y") %>.
+	  </small></p>
+	</div>
+	
+	<div class="span6">
+	  <p class="text-right"><small>
+	    	     Responsive Web Design and Sponsoring by  <a href="http://www.artooa.ch/"><img class="img-rounded" src="/assets/img/logo-artooa-545ca5.png" width="100px" alt="www.artooa.ch"></a>
+	      
+	   </small></p>		  		  
+	</div> <!-- span -->
+  </div> <!-- row -->
+
+  </div> <!-- row -->
+</div> <!-- container --> 
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="assets/js/bootstrap-min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+   <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    
+  </body>
+</html>
