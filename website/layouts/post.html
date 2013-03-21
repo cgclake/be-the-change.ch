@@ -7,13 +7,15 @@
       <br>
     
       <article>
+      <div class="row-fluid">
         <%= yield %>
+        </div> 
       </article>
     </div> <!-- span -->
   </div> <!-- post --> 
   
-  <div class="span3">
-    <div class="hero-unit" id="hero-unit">
+  <div class="span4">
+    <div class="well" id="hero-unit">
 	<h3><a href="/blogs/">Blog</a></h3>
 	
 	<% (@site.sorted_articles[0..2]).each do |post| %>
