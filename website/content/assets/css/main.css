@@ -64,7 +64,11 @@ p#social a:link a:visited{
 	background-color: #e8d5e4
 }
 
-
+#copyright p {
+	font-weight: 100;
+	font-size: small;
+	
+}
 
 
 

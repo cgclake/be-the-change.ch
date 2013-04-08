@@ -15,13 +15,13 @@ lead: Das Symposium ist eine Plattform für Veränderungen.
 	<% (@site.sorted_events).each do |event| %>
 		<h3><%= event[:title] %> <h3>
 			
-	    <p class="lead"><%= event[:lead] %> <%= link_to 'Mehr &raquo;', event.path %></p>
+	    <p class="lead"><small><%= event[:lead] %> <%= link_to 'Mehr &raquo;', event.path %></small></p>
 	
 	<% end %>
   </div>
   
   <div class="span4">
-  	<div class="hero-unit">
+  	<div class="well">
 
 	<h3><a href="/blogs/">BTC Blog</a></h3>
 		
