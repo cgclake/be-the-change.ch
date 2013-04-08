@@ -1,4 +1,37 @@
 ---
-title: Veranstaltungen
+title: Alle Veranstaltungen
 lead: Das Symposium ist eine Plattform für Veränderungen. 
 ---
+
+
+
+
+		
+
+
+<div class="row-fluid">
+  <div class="span8">
+  
+	<% (@site.sorted_events).each do |event| %>
+		<h3><%= event[:title] %> <h3>
+			
+	    <p class="lead"><%= event[:lead] %> <%= link_to 'Mehr &raquo;', event.path %></p>
+	
+	<% end %>
+  </div>
+  
+  <div class="span4">
+  	<div class="hero-unit">
+
+	<h3><a href="/blogs/">BTC Blog</a></h3>
+		
+	<% (@site.sorted_articles[0..4]).each do |post| %>
+		<h4><%= post[:title] %></h4>
+		<p><small><%= get_pretty_date(post) %> - 	
+	    <%= post[:lead] %> <%= link_to 'Mehr &raquo;', post.path %> </small></p>
+	
+	<% end %>
+	
+    </div> <!-- hero -->
+  </div>  <!-- span -->
+</div> <!-- row -->

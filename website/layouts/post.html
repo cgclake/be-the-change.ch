@@ -1,27 +1,32 @@
 <% render 'default' do %>
-<div class="row">
+
+<div class="row-fluid">
   <div class="span8">
-    <div class='post'>
     
-      <aside>A. Kapp, <%= get_pretty_date(item) %></aside>
+    
+      <aside><%= item[:author] %> <%= get_pretty_date(item) %></aside>
       <br>
     
-      <article>
-      <div class="row-fluid">
+      
+      
+
+
+      <div class="article">
         <%= yield %>
         </div> 
-      </article>
+
+      
     </div> <!-- span -->
-  </div> <!-- post --> 
+
   
   <div class="span4">
     <div class="well" id="hero-unit">
-	<h3><a href="/blogs/">Blog</a></h3>
-	
-	<% (@site.sorted_articles[0..2]).each do |post| %>
-		<h4><%= link_to post[:title], post.path %></h4>
+		<h3>BTC Blog</h3>
+		
+	<% (@site.sorted_articles[0..4]).each do |post| %>
+		<h4><%= post[:title] %></h4>
 		<p><small><%= get_pretty_date(post) %> - 	
-	    <%= link_to(post[:lead], post.reps[0], :id => 'bloglink') %> </small></p>
+	    <%= post[:lead] %> <%= link_to 'Mehr&nbsp;&raquo;', post.path %> </small></p>
 	
 	<% end %>
 

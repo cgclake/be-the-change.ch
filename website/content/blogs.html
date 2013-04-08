@@ -7,11 +7,12 @@ lead:  News aus der Welt im Wandel
   <div class="span8">
   
 <% (@site.sorted_articles).each do |post| %>
-	<h3><%= link_to post[:title], post.path %></h3>
+	<h3><%= post[:title] %></h3>
 	<p><%= get_pretty_date(post) %> - 	
-    <%= post[:lead] %></p>
+    <%= post[:lead] %> <%= link_to 'Mehr &raquo;', post.path %></p>
 
 <% end %>
+
   </div>
   
   <div class="span3">

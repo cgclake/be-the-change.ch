@@ -1,0 +1,36 @@
+<% render 'default' do %>
+<div class="row">
+  <div class="span8">
+    <div class='post'>
+    
+      <aside>BTC, <%= get_pretty_date(item) %></aside>
+      <br>
+    
+      <article>
+      <div class="row-fluid">
+        <%= yield %>
+        </div> 
+      </article>
+    </div> <!-- span -->
+  </div> <!-- post --> 
+  
+  <div class="span4">
+    <div class="well" id="hero-unit">
+	<h3><a href="/events/">Weitere Veranstaltungen</a></h3>
+	
+	
+		<% (@site.sorted_events).each do |event| %>
+		<h3><%= event[:title] %><h3>
+		<p class="lead">	
+	    <%= event[:lead] %> <%= link_to('Mehr&nbsp;&raquo;', event.reps[0], :id => 'bloglink') %></p>
+	
+	<% end %>
+
+   </div> <!-- hero -->
+
+  </div>  <!-- span -->
+</div>  <!-- row -->
+
+<% end %>
+
+

@@ -5,12 +5,10 @@ body {
     font-size: 14px;
   }
   
- h2, h3 {
+ h2, h3, h4 {
      color: #0ba81d;
  } 
- h4 {
-     color: gray
- }
+
 
  .div.navbar-inner {
  	background-color: blue; /* background color will be black for all browsers */
