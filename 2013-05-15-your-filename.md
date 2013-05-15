@@ -19,3 +19,6 @@ geht z.zt. an 10'100 adressen.
 permakultur news 
 vertrags-landwirtschaft / food coop / transition town 
 geht an ca. 2'300 adressen.
+
+>Dies ist ein Zitat
+
