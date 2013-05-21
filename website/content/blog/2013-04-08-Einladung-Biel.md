@@ -4,6 +4,7 @@ created_at: 2013-04-08 12:00:00 -0100
 kind: article
 lead: "Ein Grossteil der Menschheit lebt am Rande des Existenzminimums, die Anderen am Rande des Burn-outs und Depression. Die irdischen Ressourcen sind erschöpft oder neigen sich dem Ende zu. Jetzt ist die Zeit, Verantwortung zu übernehmen für eine ökologisch nachhaltige, geistig erfüllende und sozial gerechte menschliche Präsenz."
 author: Andrea Langenegger
+
 ---
 
 ### Einladung zum Symposium in Biel
