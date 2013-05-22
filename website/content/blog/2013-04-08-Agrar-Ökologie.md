@@ -12,6 +12,7 @@ author: Andreas Kapp
 
 ![picture alt](http://be-the-change.ch/assets/img/blatt.png)
 Beispiel für Website-basierende Edition (Prose.io) absolute Pfad
+<img src="http://be-the-change.ch/assets/img/blatt.png" alt="Drawing" style="width: 200px;"/>
 ![picture alt](assets/img/blatt.png) relative Pfad
 Beispiel für lokal-basierende Edition (Mou)
 
